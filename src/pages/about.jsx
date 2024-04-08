@@ -66,7 +66,7 @@ function About() {
       </div>
       <div className="container text-center">
         <h1>Contact Us!</h1>
-        <ul>
+        <ul className="list-unstyled">
           <li>Phone: 530-867-6581</li>
           <li>Email: fullertonlogan@gmail.com </li>
         </ul>
