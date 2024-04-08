@@ -1,11 +1,15 @@
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 export default function Header() {
   return (
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-dark">
         <div className="container">
-          <a className="navbar-brand" href="/">
+          <Link to="/" className="navbar-brand">
             Fullerton Fabrication
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -15,14 +19,14 @@ export default function Header() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <FontAwesomeIcon icon={faBars} style={{ color: "white" }} />
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link text-center" href="portfolio">
-                  Work Portfolio
-                </a>
+                <Link to="/portfolio" className="nav-link">
+                  Portfolio
+                </Link>
               </li>
             </ul>
           </div>

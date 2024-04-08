@@ -5,7 +5,7 @@ import App from "./app.jsx";
 import About from "./pages/about.jsx";
 import Portfolio from "./pages/portfolio";
 
-//import './index.css';
+import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const router = createBrowserRouter([
