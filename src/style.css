@@ -1,13 +1,26 @@
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.navbar-brand {
+  font-size: 1.55rem;
+  font-weight: 700;
+  padding: 1.5rem !important;
+  color: white !important;
+}
+
+nav a.nav-link {
+  font-weight: 200;
+  font-size: 1.1rem;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: white !important;
+}
+
+.navbar-nav > li > a:hover {
+  transform: scale(1.1);
+  transition: transform 0.05s ease;
+  color: lightgray !important;
 }
